@@ -1,0 +1,9 @@
+{
+  "proyecto_titulo":"Proyecto de Kovac",
+  "proyecto_nombre":"{{cookiecutter.proyecto_titulo.replace(' ','_')}}",
+  "proyecto_babosa":"{{cookiecutter.proyecto_nombre.replace(' ','_')}}",
+  "proyecto_descripcion":"Algo piola",
+  "proyecto_autor":"Tu nombre",
+  "proyecto_carpetas":["All","Poco"],
+  "python_version": "3.10"
+}

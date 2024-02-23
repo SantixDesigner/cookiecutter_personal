@@ -1,0 +1,7 @@
+name: cookiecutter
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - cookiecutter
+prefix: /home/santix1233/anaconda3/envs/cookiecutter

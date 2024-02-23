@@ -1,0 +1,22 @@
+name: {{cookiecutter.proyecto_babosa}}
+
+channels: 
+  - anaconda
+  - conda-forge
+  - defaults
+dependencies:
+  {%if cookiecutter.proyecto_carpetas == "All" -%}
+  - fs
+  - jupyter
+  - jupyterlab
+  - pathlib
+  {% endif -%}
+  - pip
+  {%if cookiecutter.proyecto_carpetas == "All" -%}
+  - pyprojroot
+  {% endif -%}
+  - python = {{cookiecutter.python_version}}
+  - pip:
+    {%if cookiecutter.proyecto_carpetas == "All" -%}
+    -pyhere
+    {% endif -%}
